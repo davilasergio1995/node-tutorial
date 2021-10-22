@@ -1,3 +1,4 @@
-
-
 October 18th, 11:18 PM EST: I'm tired but I figured out promises. It's a start.
+
+October 21st, 8:38 PM EST: We've typed out a basic server with some requests/responses. Not fancy at all, 
+but it's definitely something to at least show off the fact that I'm learning. Feels good. Hi Fahim and Mario!
