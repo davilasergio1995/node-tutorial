@@ -1,9 +1,38 @@
+const express = require('express');
+const alessa = express();
 const http = require('http');
-const {readFile, writeFile} = require('fs');
+const {readFile, appendFile} = require('fs');
 const path = require('path');
 const htmlPage = path.join(__dirname, './content','html-pages', 'index.html');
-const jsFile = path.join(__dirname, './content','html-pages', 'button.js');
-const server = http.createServer((req, res) => {
+const router = express.Router();
+
+alessa.use(express.static('./static/'));
+
+router.get('/', (req,res) => {
+    res.sendFile(htmlPage);
+});
+
+
+alessa.use('/', router);
+
+alessa.listen(8000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const server = http.createServer((req, res) => {
     res.writeHead(200, {'Content-type': 'text/html'})
     let fileRead = (fileName) => {
         return new Promise((resolve, reject) => {
@@ -28,4 +57,4 @@ const server = http.createServer((req, res) => {
     printPage();
 });
 
-server.listen(8000)
+server.listen(8000)*/
