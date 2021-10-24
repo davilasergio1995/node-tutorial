@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/davilasergio1995/node-tutorial/issues"
   },
-  "homepage": "https://github.com/davilasergio1995/node-tutorial#readme"
+  "homepage": "https://github.com/davilasergio1995/node-tutorial#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
